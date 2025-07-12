@@ -7,4 +7,4 @@ Based on: https://roadmap.sh/projects/portfolio-website
 Porfolio website about me!
 ![alt text](<HS Portfolio - Homepage Screenshot.png>)
 
-Link to website: zxdixc.github.io
+Link to website: https://zxdixc.github.io
