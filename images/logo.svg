@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="210mm"
+   height="297mm"
+   viewBox="0 0 210 297"
+   version="1.1"
+   id="svg1"
+   inkscape:version="1.4.2 (f4327f4, 2025-05-13)"
+   sodipodi:docname="logo.svg"
+   inkscape:export-filename="logo.png"
+   inkscape:export-xdpi="25.122309"
+   inkscape:export-ydpi="25.122309"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <title
+     id="title1">HS Initials Logo</title>
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="mm"
+     inkscape:zoom="1.0093364"
+     inkscape:cx="237.28462"
+     inkscape:cy="454.25886"
+     inkscape:window-width="2560"
+     inkscape:window-height="1351"
+     inkscape:window-x="-9"
+     inkscape:window-y="-9"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1"
+     showguides="true" />
+  <defs
+     id="defs1">
+    <rect
+       x="72.158298"
+       y="209.46923"
+       width="505.10809"
+       height="594.78054"
+       id="rect2" />
+    <rect
+       x="261.55798"
+       y="326.94748"
+       width="355.67923"
+       height="384.41098"
+       id="rect1" />
+  </defs>
+  <metadata
+     id="metadata1">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:title>HS Initials Logo</dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <ellipse
+     style="fill:#f9f9f9;stroke-width:0.412341"
+     id="path5"
+     cx="105"
+     cy="133.20978"
+     rx="101.10536"
+     ry="100.52763" />
+  <g
+     inkscape:groupmode="layer"
+     id="layer1"
+     inkscape:label="Background">
+    <path
+       style="font-size:208.561px;font-family:Winner-Bold;-inkscape-font-specification:Winner-Bold;text-align:center;text-anchor:middle;fill:#1a1a1a;stroke-width:0.843957"
+       d="M 95.688426,87.965605 H 81.96734 v 37.931055 l 38.30755,18.00164 0.144,18.86574 -38.45155,-16.70553 v 29.32978 h 13.721086 v 28.24148 H 42.263797 V 175.38829 H 56.130842 V 87.965605 H 42.263797 V 59.724116 h 53.424629 z"
+       id="text3"
+       sodipodi:nodetypes="ccccccccccccccccc" />
+    <path
+       style="font-size:208.561px;font-family:Winner-Bold;-inkscape-font-specification:Winner-Bold;text-align:center;text-anchor:middle;fill:#1a1a1a;stroke-width:0.843957"
+       d="m 115.90482,175.38829 h 13.72107 V 137.45724 L 91.318349,119.4556 91.174343,100.58982 129.62589,117.2954 V 87.965605 H 115.90482 V 59.724116 h 53.4246 V 87.965605 H 155.4624 v 87.422685 h 13.86702 v 28.24148 h -53.4246 z"
+       id="path4"
+       sodipodi:nodetypes="ccccccccccccccccc" />
+  </g>
+</svg>

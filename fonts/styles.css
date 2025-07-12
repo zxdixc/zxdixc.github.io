@@ -1,0 +1,562 @@
+/* Regular */
+@font-face {
+  font-family: "Junicode";
+  src: url("Junicode.woff2") format("woff2"),
+    url("Junicode.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Bold */
+@font-face {
+  font-family: "Junicode";
+  src: url("Junicode-Bold.woff2") format("woff2"),
+    url("Junicode-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Bold Condensed */
+@font-face {
+  font-family: "Junicode";
+  src: url("Junicode-BoldCondensed.woff2") format("woff2"),
+    url("Junicode-BoldCondensed.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Bold Italic */
+@font-face {
+  font-family: "Junicode";
+  src: url("Junicode-BoldItalic.woff2") format("woff2"),
+    url("Junicode-BoldItalic.woff") format("woff");
+  font-weight: bold;
+  font-style: italic;
+  font-display: swap;
+}
+
+/* Bold Italic Condensed */
+@font-face {
+  font-family: "Junicode";
+  src: url("Junicode-BoldItalicCondensed.woff2") format("woff2"),
+    url("Junicode-BoldItalicCondensed.woff") format("woff");
+  font-weight: bold;
+  font-style: italic;
+  font-display: swap;
+}
+
+/* Condensed */
+@font-face {
+  font-family: "Junicode";
+  src: url("Junicode-Cond.woff2") format("woff2"),
+    url("Junicode-Cond.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Condensed Italic */
+@font-face {
+  font-family: "Junicode";
+  src: url("Junicode-CondItalic.woff2") format("woff2"),
+    url("Junicode-CondItalic.woff") format("woff");
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+}
+
+/* Condensed Light */
+@font-face {
+  font-family: "Junicode";
+  src: url("Junicode-CondLight.woff2") format("woff2"),
+    url("Junicode-CondLight.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Condensed Light Italic */
+@font-face {
+  font-family: "Junicode";
+  src: url("Junicode-CondLightItalic.woff2") format("woff2"),
+    url("Junicode-CondLightItalic.woff") format("woff");
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap;
+}
+
+/* Condensed Medium Italic */
+@font-face {
+  font-family: "Junicode";
+  src: url("Junicode-CondMediumItalic.woff2") format("woff2"),
+    url("Junicode-CondMediumItalic.woff") format("woff");
+  font-weight: 500;
+  font-style: italic;
+  font-display: swap;
+}
+
+/* Italic */
+@font-face {
+  font-family: "Junicode";
+  src: url("Junicode-Italic.woff2") format("woff2"),
+    url("Junicode-Italic.woff") format("woff");
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+}
+
+/* Condensed Medium */
+@font-face {
+  font-family: "Junicode";
+  src: url("Junicode-CondMedium.woff2") format("woff2"),
+    url("Junicode-CondMedium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Italic Condensed */
+@font-face {
+  font-family: "Junicode";
+  src: url("Junicode-ItalicCondensed.woff2") format("woff2"),
+    url("Junicode-ItalicCondensed.woff") format("woff");
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+}
+
+/* Light */
+@font-face {
+  font-family: "Junicode";
+  src: url("Junicode-Light.woff2") format("woff2"),
+    url("Junicode-Light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Light Italic */
+@font-face {
+  font-family: "Junicode";
+  src: url("Junicode-LightItalic.woff2") format("woff2"),
+    url("Junicode-LightItalic.woff") format("woff");
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap;
+}
+
+/* Medium */
+@font-face {
+  font-family: "Junicode";
+  src: url("Junicode-Medium.woff2") format("woff2"),
+    url("Junicode-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Medium Italic */
+@font-face {
+  font-family: "Junicode";
+  src: url("Junicode-MediumItalic.woff2") format("woff2"),
+    url("Junicode-MediumItalic.woff") format("woff");
+  font-weight: 500;
+  font-style: italic;
+  font-display: swap;
+}
+
+/* Regular Condensed */
+@font-face {
+  font-family: "Junicode";
+  src: url("Junicode-RegularCondensed.woff2") format("woff2"),
+    url("Junicode-RegularCondensed.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Small Bold */
+@font-face {
+  font-family: "Junicode";
+  src: url("Junicode-SmBold.woff2") format("woff2"),
+    url("Junicode-SmBold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Small Condensed */
+@font-face {
+  font-family: "Junicode";
+  src: url("Junicode-SmCond.woff2") format("woff2"),
+    url("Junicode-SmCond.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Small Condensed Italic */
+@font-face {
+  font-family: "Junicode";
+  src: url("Junicode-SmCondItalic.woff2") format("woff2"),
+    url("Junicode-SmCondItalic.woff") format("woff");
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+}
+
+/* Small Bold Italic */
+@font-face {
+  font-family: "Junicode";
+  src: url("Junicode-SmBoldItalic.woff2") format("woff2"),
+    url("Junicode-SmBoldItalic.woff") format("woff");
+  font-weight: bold;
+  font-style: italic;
+  font-display: swap;
+}
+
+/* Small Condensed Light */
+@font-face {
+  font-family: "Junicode";
+  src: url("Junicode-SmCondLight.woff2") format("woff2"),
+    url("Junicode-SmCondLight.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Small Condensed Light Italic */
+@font-face {
+  font-family: "Junicode";
+  src: url("Junicode-SmCondLightItalic.woff2") format("woff2"),
+    url("Junicode-SmCondLightItalic.woff") format("woff");
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap;
+}
+
+/* Small Condensed Medium */
+@font-face {
+  font-family: "Junicode";
+  src: url("Junicode-SmCondMedium.woff2") format("woff2"),
+    url("Junicode-SmCondMedium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Small Condensed Medium Italic */
+@font-face {
+  font-family: "Junicode";
+  src: url("Junicode-SmCondMediumItalic.woff2") format("woff2"),
+    url("Junicode-SmCondMediumItalic.woff") format("woff");
+  font-weight: 500;
+  font-style: italic;
+  font-display: swap;
+}
+
+/* Small Expanded Small Bold Italic */
+@font-face {
+  font-family: "Junicode";
+  src: url("Junicode-SmExpSmBoldItalic.woff2") format("woff2"),
+    url("Junicode-SmExpSmBoldItalic.woff") format("woff");
+  font-weight: bold;
+  font-style: italic;
+  font-display: swap;
+}
+
+/* Small Expanded Medium */
+@font-face {
+  font-family: "Junicode";
+  src: url("Junicode-SmExpMedium.woff2") format("woff2"),
+    url("Junicode-SmExpMedium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Small Expanded */
+@font-face {
+  font-family: "Junicode";
+  src: url("Junicode-SmExp.woff2") format("woff2"),
+    url("Junicode-SmExp.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Small Expanded Italic */
+@font-face {
+  font-family: "Junicode";
+  src: url("Junicode-SmExpItalic.woff2") format("woff2"),
+    url("Junicode-SmExpItalic.woff") format("woff");
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+}
+
+/* Small Expanded Medium Italic */
+@font-face {
+  font-family: "Junicode";
+  src: url("Junicode-SmExpMediumItalic.woff2") format("woff2"),
+    url("Junicode-SmExpMediumItalic.woff") format("woff");
+  font-weight: 500;
+  font-style: italic;
+  font-display: swap;
+}
+
+/* Small Expanded Small Bold */
+@font-face {
+  font-family: "Junicode";
+  src: url("Junicode-SmExpSmBold.woff2") format("woff2"),
+    url("Junicode-SmExpSmBold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+:root {
+  --color-primary: #059212; /* Primary color */
+  --color-secondary: #06d001; /* Secondary color */
+  --color-accent: #9bec00; /* Accent color */
+  --color-text-light: #000000; /* Light text color */
+  --color-text-dark: #fffb00; /* Dark text color */
+}
+
+.profile-header {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  z-index: 1000;
+  margin-bottom: 3em;
+}
+.profile-pic {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 12px;
+}
+.profile-name {
+  font-family: "Junicode", serif;
+  font-weight: bold;
+  font-size: 1em;
+  color: black;
+}
+
+.site-logo {
+  width: 200px;
+  height: auto;
+  margin-bottom: 0.5em;
+}
+
+.italic {
+  font-style: italic;
+}
+
+main {
+  text-align: center;
+  font-size: 1.3em;
+}
+
+body {
+  font-family: "Junicode", sans-serif;
+  margin: 0;
+  padding: 20px;
+  background-color: white;
+  color: var(--color-text-light);
+  position: relative;
+  z-index: 1;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url("../images/logo.svg") no-repeat center center;
+  background-size: 500px auto;
+  opacity: 0.08;
+  pointer-events: none;
+  z-index: 0;
+}
+
+hr {
+  margin-top: 4em;
+  margin-bottom: 2em;
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  z-index: 1000;
+  background: transparent;
+  border: 2.5px solid var(--color-primary);
+  border-radius: 1.5em;
+  box-shadow: none;
+  padding: 0.2em 1em;
+  transition: border-color 0.3s;
+}
+
+nav a {
+  margin: 6px 10px;
+  text-align: right;
+  border-radius: 1em;
+  padding: 0.3em 0.9em;
+  text-decoration: none;
+  color: var(--color-primary);
+  transition: background 0.2s, color 0.2s;
+}
+
+nav a:hover,
+nav a:focus {
+  background: var(--color-primary);
+  color: #fff;
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Junicode", serif;
+  font-weight: bold;
+}
+
+h1 {
+  color: var(--color-primary);
+}
+
+h2 {
+  color: var(--color-secondary);
+}
+
+h3 {
+  color: var(--color-accent);
+}
+
+h4 {
+  font-family: "Junicode", serif;
+  font-weight: bold;
+  font-style: italic;
+}
+
+p {
+  font-family: "Junicode", sans-serif;
+  color: var(--color-text-light);
+}
+
+li {
+  font-family: "Junicode", sans-serif;
+  color: var(--color-text-light);
+}
+
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: #696969;
+    color: var(--color-text-dark);
+  }
+
+  nav {
+    background: transparent;
+    border-color: var(--color-accent);
+    box-shadow: none;
+  }
+
+  nav a {
+    color: var(--color-accent);
+  }
+
+  nav a:hover,
+  nav a:focus {
+    background: var(--color-accent);
+    color: #222;
+  }
+
+  p {
+    color: var(--color-text-dark);
+  }
+
+  li {
+    color: var(--color-text-dark);
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .profile-header {
+    position: relative;
+    margin-bottom: 1em;
+    left: 50%;
+    transform: translateX(-50%);
+    justify-content: center;
+    text-align: center;
+  }
+  .profile-pic {
+    width: 36px;
+    height: 36px;
+  }
+
+  hr {
+    margin-top: 2em;
+    margin-bottom: 1em;
+  }
+
+  main {
+    margin-top: 1em;
+  }
+
+  body {
+    padding: 10px;
+  }
+
+  nav {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: auto;
+    margin: 1em auto 0 auto;
+    padding: 0.5em 1em;
+    border-radius: 1em;
+    box-shadow: 0 1px 6px rgba(0, 0, 0, 0.1);
+    font-size: 1em;
+    gap: 0.2em;
+    max-width: 95vw;
+    min-width: 0;
+    display: inline-flex;
+  }
+  nav a {
+    margin: 0 6px;
+    text-align: center;
+    padding: 0.3em 0.7em;
+    font-size: 1em;
+  }
+
+  h1 {
+    font-size: 1.5em;
+  }
+
+  h2 {
+    font-size: 1.25em;
+  }
+
+  h3 {
+    font-size: 1.1em;
+  }
+
+  p,
+  li {
+    font-size: 0.9em;
+  }
+}

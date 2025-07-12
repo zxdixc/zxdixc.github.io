@@ -1,0 +1,19 @@
+Primary
+#059212
+rgb(5, 146, 18)
+
+Secondary
+#06D001
+rgb(6, 208, 1)
+
+Accent
+#9BEC00
+rgb(155, 236, 0)
+
+Light Text
+#F3FF90
+rgb(243, 255, 144)
+
+Dark Text
+#A9A9A9
+rgb(169, 169, 169)
