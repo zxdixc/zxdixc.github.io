@@ -243,6 +243,24 @@ li {
   color: var(--color-text-light);
 }
 
+.last-updated {
+  text-align: center;
+  margin-top: 3em;
+  padding: 1em 0;
+  border-top: 1px solid #e0e0e0;
+  font-family: "Outfit", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+  color: #666;
+  font-size: 0.9em;
+}
+
+body.dark-mode .last-updated {
+  border-top-color: #444;
+  color: #aaa;
+}
+
 @media (prefers-color-scheme: dark) {
   body {
     background-color: var(--bg-dark);
@@ -347,5 +365,10 @@ li {
   p,
   li {
     font-size: 0.9em;
+  }
+
+  .last-updated {
+    font-size: 0.8em;
+    margin-top: 2em;
   }
 }
