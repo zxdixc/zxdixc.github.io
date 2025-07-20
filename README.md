@@ -130,10 +130,6 @@ Personal Portfolio/
 - **GitHub**: [zxdixc](https://github.com/zxdixc)
 - **Instagram**: [hanisahlii](https://www.instagram.com/hanisahlii/)
 
-## 📄 License
-
-This project is open source and available under the [MIT License](LICENSE).
-
 ## 🤝 Contributing
 
 While this is a personal portfolio, suggestions and feedback are welcome! Feel free to:
