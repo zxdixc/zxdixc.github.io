@@ -4,6 +4,7 @@
     <title>HS Portfolio - Contact</title>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="color-scheme" content="light dark" />
     <meta
       name="description"
       content="Contact Muhamad Hanis Sahli Bin Iskandar."
@@ -17,8 +18,17 @@
       property="og:description"
       content="Get in touch with me for collaborations or inquiries."
     />
-    <link rel="icon" type="image/x-icon" href="/images/logo.ico" />
-    <link rel="stylesheet" href="fonts/styles.css" />
+    <link rel="icon" type="image/x-icon" href="images/logo.ico" />
+
+    <!-- Google Fonts - Outfit -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
     <div class="profile-header">
@@ -29,6 +39,13 @@
       <a href="index.html">Home</a>
       <a href="projects.html">Projects</a>
       <a href="contact.html">Contact</a>
+      <button
+        id="darkModeToggle"
+        class="dark-mode-toggle"
+        aria-label="Toggle dark mode"
+      >
+        <span class="toggle-icon">🌙</span>
+      </button>
     </nav>
 
     <hr />
@@ -57,5 +74,55 @@
         </li>
       </ul>
     </main>
+
+    <script>
+      // Dark mode toggle functionality
+      document.addEventListener("DOMContentLoaded", function () {
+        const darkModeToggle = document.getElementById("darkModeToggle");
+        const body = document.body;
+        const toggleIcon = document.querySelector(".toggle-icon");
+
+        if (!darkModeToggle || !toggleIcon) {
+          console.error("Dark mode elements not found");
+          return;
+        }
+
+        // Check for saved dark mode preference or default to light mode
+        let darkMode = false;
+        try {
+          darkMode = localStorage.getItem("darkMode") === "true";
+        } catch (error) {
+          console.warn("Could not access localStorage:", error);
+        }
+
+        // Apply dark mode on page load if it was previously enabled
+        if (darkMode) {
+          body.classList.add("dark-mode");
+          toggleIcon.textContent = "☀️";
+        }
+
+        // Toggle dark mode
+        darkModeToggle.addEventListener("click", () => {
+          body.classList.toggle("dark-mode");
+
+          // Update icon and save preference
+          if (body.classList.contains("dark-mode")) {
+            toggleIcon.textContent = "☀️";
+            try {
+              localStorage.setItem("darkMode", "true");
+            } catch (error) {
+              console.warn("Could not save dark mode preference:", error);
+            }
+          } else {
+            toggleIcon.textContent = "🌙";
+            try {
+              localStorage.setItem("darkMode", "false");
+            } catch (error) {
+              console.warn("Could not save dark mode preference:", error);
+            }
+          }
+        });
+      });
+    </script>
   </body>
 </html>

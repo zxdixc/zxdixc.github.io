@@ -1,0 +1,351 @@
+/* Google Fonts - Outfit */
+/* Using modern CSS with font-optical-sizing for better rendering */
+
+/* Prevent Dark Reader from interfering with custom dark mode */
+html {
+  color-scheme: light dark;
+}
+
+:root {
+  --color-primary: #059212; /* Primary color */
+  --color-secondary: #06d001; /* Secondary color */
+  --color-accent: #9bec00; /* Accent color */
+  --color-text-light: #000000; /* Light text color */
+  --color-text-dark: #ffffff; /* Dark text color */
+
+  /* Dark mode variables */
+  --bg-light: #ffffff;
+  --bg-dark: #1a1a1a;
+  --text-light: #000000;
+  --text-dark: #ffffff;
+  --nav-border-light: var(--color-primary);
+  --nav-border-dark: var(--color-accent);
+  --profile-name-light: #000000;
+  --profile-name-dark: #ffffff;
+}
+
+.profile-header {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  z-index: 1000;
+  margin-bottom: 3em;
+}
+.profile-pic {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 12px;
+}
+.profile-name {
+  font-family: "Outfit", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: bold;
+  font-style: normal;
+  font-size: 1em;
+  color: var(--profile-name-light);
+  transition: color 0.3s ease;
+}
+
+.site-logo {
+  width: 200px;
+  height: auto;
+  margin-bottom: 0.5em;
+}
+
+.italic {
+  font-style: italic;
+}
+
+main {
+  text-align: center;
+  font-size: 1.3em;
+}
+
+body {
+  font-family: "Outfit", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  margin: 0;
+  padding: 20px;
+  background-color: var(--bg-light);
+  color: var(--text-light);
+  position: relative;
+  z-index: 1;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url("images/logo.svg") no-repeat center center;
+  background-size: 500px auto;
+  opacity: 0.08;
+  pointer-events: none;
+  z-index: 0;
+}
+
+hr {
+  margin-top: 4em;
+  margin-bottom: 2em;
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  z-index: 1000;
+  background: transparent;
+  border: 2.5px solid var(--nav-border-light);
+  border-radius: 1.5em;
+  box-shadow: none;
+  padding: 0.2em 1em;
+  transition: border-color 0.3s ease;
+}
+
+nav a {
+  margin: 6px 10px;
+  text-align: right;
+  border-radius: 1em;
+  padding: 0.3em 0.9em;
+  text-decoration: none;
+  color: var(--color-primary);
+  transition: background 0.2s, color 0.2s;
+}
+
+nav a:hover,
+nav a:focus {
+  background: var(--color-primary);
+  color: #fff;
+}
+
+/* Dark mode toggle button */
+.dark-mode-toggle {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0.3em 0.9em;
+  margin: 6px 10px;
+  border-radius: 1em;
+  font-size: 1.2em;
+  transition: background 0.2s, color 0.2s;
+  color: var(--color-primary);
+}
+
+.dark-mode-toggle:hover,
+.dark-mode-toggle:focus {
+  background: var(--color-primary);
+  color: #fff;
+}
+
+.toggle-icon {
+  transition: transform 0.3s ease;
+}
+
+/* Dark mode styles */
+body.dark-mode {
+  background-color: var(--bg-dark);
+  color: var(--text-dark);
+}
+
+body.dark-mode .profile-name {
+  color: var(--profile-name-dark);
+}
+
+body.dark-mode nav {
+  border-color: var(--nav-border-dark);
+}
+
+body.dark-mode nav a {
+  color: var(--color-accent);
+}
+
+body.dark-mode nav a:hover,
+body.dark-mode nav a:focus {
+  background: var(--color-accent);
+  color: #222;
+}
+
+body.dark-mode .dark-mode-toggle {
+  color: var(--color-accent);
+}
+
+body.dark-mode .dark-mode-toggle:hover,
+body.dark-mode .dark-mode-toggle:focus {
+  background: var(--color-accent);
+  color: #222;
+}
+
+body.dark-mode .toggle-icon {
+  transform: rotate(180deg);
+}
+
+body.dark-mode p {
+  color: var(--text-dark);
+}
+
+body.dark-mode li {
+  color: var(--text-dark);
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Outfit", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: bold;
+  font-style: normal;
+}
+
+h1 {
+  color: var(--color-primary);
+}
+
+h2 {
+  color: var(--color-secondary);
+}
+
+h3 {
+  color: var(--color-accent);
+}
+
+h4 {
+  font-family: "Outfit", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: bold;
+  font-style: italic;
+}
+
+p {
+  font-family: "Outfit", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  color: var(--color-text-light);
+}
+
+li {
+  font-family: "Outfit", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  color: var(--color-text-light);
+}
+
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: var(--bg-dark);
+    color: var(--text-dark);
+  }
+
+  nav {
+    background: transparent;
+    border-color: var(--color-accent);
+    box-shadow: none;
+  }
+
+  nav a {
+    color: var(--color-accent);
+  }
+
+  nav a:hover,
+  nav a:focus {
+    background: var(--color-accent);
+    color: #222;
+  }
+
+  p {
+    color: var(--text-dark);
+  }
+
+  li {
+    color: var(--text-dark);
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .profile-header {
+    position: relative;
+    margin-bottom: 1em;
+    left: 50%;
+    transform: translateX(-50%);
+    justify-content: center;
+    text-align: center;
+  }
+  .profile-pic {
+    width: 36px;
+    height: 36px;
+  }
+
+  hr {
+    margin-top: 2em;
+    margin-bottom: 1em;
+  }
+
+  main {
+    margin-top: 1em;
+  }
+
+  body {
+    padding: 10px;
+  }
+
+  nav {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: auto;
+    margin: 1em auto 0 auto;
+    padding: 0.5em 1em;
+    border-radius: 1em;
+    box-shadow: 0 1px 6px rgba(0, 0, 0, 0.1);
+    font-size: 1em;
+    gap: 0.2em;
+    max-width: 95vw;
+    min-width: 0;
+    display: inline-flex;
+  }
+  nav a {
+    margin: 0 6px;
+    text-align: center;
+    padding: 0.3em 0.7em;
+    font-size: 1em;
+  }
+
+  .dark-mode-toggle {
+    margin: 0 6px;
+    padding: 0.3em 0.7em;
+    font-size: 1em;
+  }
+
+  h1 {
+    font-size: 1.5em;
+  }
+
+  h2 {
+    font-size: 1.25em;
+  }
+
+  h3 {
+    font-size: 1.1em;
+  }
+
+  p,
+  li {
+    font-size: 0.9em;
+  }
+}
