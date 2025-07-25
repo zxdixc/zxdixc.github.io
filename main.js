@@ -53,3 +53,12 @@ window.addEventListener("DOMContentLoaded", function () {
     });
   }
 });
+
+window.addEventListener("DOMContentLoaded", function () {
+  const lastUpdated = document.getElementById("lastUpdated");
+  if (lastUpdated) {
+    lastUpdated.textContent =
+      "Last updated: " +
+      new Date(document.lastModified).toLocaleDateString("en-GB");
+  }
+});

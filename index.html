@@ -204,59 +204,6 @@
       <p id="lastUpdated"></p>
     </footer>
 
-    <script>
-      // Dark mode toggle functionality
-      document.addEventListener("DOMContentLoaded", function () {
-        const darkModeToggle = document.getElementById("darkModeToggle");
-        const body = document.body;
-        const toggleIcon = document.querySelector(".toggle-icon");
-
-        if (!darkModeToggle || !toggleIcon) {
-          console.error("Dark mode elements not found");
-          return;
-        }
-
-        // Check for saved dark mode preference or default to light mode
-        let darkMode = false;
-        try {
-          darkMode = localStorage.getItem("darkMode") === "true";
-        } catch (error) {
-          console.warn("Could not access localStorage:", error);
-        }
-
-        // Apply dark mode on page load if it was previously enabled
-        if (darkMode) {
-          body.classList.add("dark-mode");
-          toggleIcon.textContent = "☀️";
-        }
-
-        // Toggle dark mode
-        darkModeToggle.addEventListener("click", () => {
-          body.classList.toggle("dark-mode");
-
-          // Update icon and save preference
-          if (body.classList.contains("dark-mode")) {
-            toggleIcon.textContent = "☀️";
-            try {
-              localStorage.setItem("darkMode", "true");
-            } catch (error) {
-              console.warn("Could not save dark mode preference:", error);
-            }
-          } else {
-            toggleIcon.textContent = "🌙";
-            try {
-              localStorage.setItem("darkMode", "false");
-            } catch (error) {
-              console.warn("Could not save dark mode preference:", error);
-            }
-          }
-        });
-      });
-      // Set last updated date dynamically
-      document.getElementById("lastUpdated").textContent =
-        "Last updated: " +
-        new Date(document.lastModified).toLocaleDateString("en-GB");
-    </script>
     <script src="main.js"></script>
   </body>
 </html>
