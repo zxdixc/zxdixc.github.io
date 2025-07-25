@@ -83,7 +83,7 @@
   <body>
     <div class="profile-header">
       <img
-        src="images/my face.jpg"
+        src="assets/my face.webp"
         alt="Muhamad Hanis Sahli Bin Iskandar - Computing Student"
         class="profile-pic"
       />
@@ -128,7 +128,7 @@
     </main>
 
     <footer class="last-updated">
-      <p>Last updated: 20/7/2025</p>
+      <p id="lastUpdated"></p>
     </footer>
 
     <script>
@@ -179,6 +179,11 @@
           }
         });
       });
+      // Set last updated date dynamically
+      document.getElementById("lastUpdated").textContent =
+        "Last updated: " +
+        new Date(document.lastModified).toLocaleDateString("en-GB");
     </script>
+    <script src="main.js"></script>
   </body>
 </html>
