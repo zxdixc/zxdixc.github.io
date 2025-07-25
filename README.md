@@ -66,62 +66,6 @@ The website is fully responsive with:
 - Touch-friendly interface elements
 - Optimized spacing for mobile devices
 
-## 🔧 Setup & Installation
-
-1. **Clone the repository**:
-
-   ```bash
-   git clone https://github.com/zxdixc/zxdixc.github.io.git
-   cd zxdixc.github.io
-   ```
-
-2. **Open in browser**:
-
-   - Simply open `index.html` in your web browser
-   - Or use a local server for development
-
-3. **For development**:
-   - Use any local server (Live Server extension, Python's `http.server`, etc.)
-   - No build process required - pure HTML/CSS/JS
-
-## 📁 Project Structure
-
-```
-Personal Portfolio/
-├── index.html          # Homepage
-├── projects.html       # Projects page
-├── contact.html        # Contact page
-├── styles.css          # Main stylesheet
-├── images/             # Image assets
-│   ├── logo.ico        # Favicon
-│   ├── logo.png        # Logo image
-│   ├── logo.svg        # Vector logo
-│   └── my face.jpg     # Profile picture
-├── fonts/              # (Removed - now using Google Fonts)
-└── README.md           # This file
-```
-
-## 🎯 About the Developer
-
-**Muhamad Hanis Sahli Bin Iskandar**
-
-- **Current Role**: Computing Student
-- **Specialization**: Network Security
-- **Institution**: Universiti Teknologi Brunei (UTB)
-- **Location**: Brunei
-
-### Education
-
-- **BSc Hons in Computing** (Major in Network Security) - UTB (2024-2026)
-- **Foundation Year** - Micronet (2023-2024)
-- **A Levels** - Pusat Tingkatan Enam Belait (2021-2022)
-
-### Skills
-
-- **Programming Languages**: HTML, CSS, Python, Java, C++
-- **Web Development**: Frontend development, responsive design
-- **Soft Skills**: Excellent communication, problem-solving, teamwork
-
 ## 🌐 Contact & Social Media
 
 - **Email**: [ilhassinah@gmail.com](mailto:ilhassinah@gmail.com)
@@ -130,24 +74,16 @@ Personal Portfolio/
 - **GitHub**: [zxdixc](https://github.com/zxdixc)
 - **Instagram**: [hanisahlii](https://www.instagram.com/hanisahlii/)
 
-## 🤝 Contributing
-
-While this is a personal portfolio, suggestions and feedback are welcome! Feel free to:
-
-- Report bugs or issues
-- Suggest improvements
-- Fork the project for your own use
-
 ## 📈 Future Enhancements
 
 Potential improvements for future versions:
 
 - [ ] Add more interactive elements
-- [ ] Implement a blog section
 - [ ] Add project filtering/categories
-- [ ] Integrate with a CMS for easier content management
 - [ ] Add animations and transitions
 - [ ] Implement contact form functionality
+- [ ] Animated intro to website
+- [ ] Page transisitons
 
 ---
 

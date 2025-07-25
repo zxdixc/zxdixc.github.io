@@ -113,7 +113,7 @@
   <body>
     <div class="profile-header">
       <img
-        src="images/my face.jpg"
+        src="assets/my face.webp"
         alt="Muhamad Hanis Sahli Bin Iskandar - Computing Student"
         class="profile-pic"
       />
@@ -166,9 +166,13 @@
         computer science in general.
       </p>
       <p>
-        Modules taken:<br>
-        <strong>Semester 1:</strong> Melayu Islam Beraja, Effective Communication, Computer Systems and Architecture, Information Security Fundamentals<br>
-        <strong>Semester 2:</strong> Systems Analysis and Design, Introduction to Programming, Fundamentals of Data Analytics, Computational Mathematics, Ethics, Legal and Professional Issues
+        Modules taken:<br />
+        <strong>Semester 1:</strong> Melayu Islam Beraja, Effective
+        Communication, Computer Systems and Architecture, Information Security
+        Fundamentals<br />
+        <strong>Semester 2:</strong> Systems Analysis and Design, Introduction
+        to Programming, Fundamentals of Data Analytics, Computational
+        Mathematics, Ethics, Legal and Professional Issues
       </p>
 
       <h3>Universiti Teknologi Brunei, Bandar Seri Begawan</h3>
@@ -178,13 +182,15 @@
       </p>
 
       <h4>July 2024 - May 2025</h4>
+      <p>After 1 year at Micronet, I continued my studies at UTB.</p>
       <p>
-        After 1 year at Micronet, I continued my studies at UTB.
-      </p>
-      <p>
-        Modules taken:<br>
-        <strong>Semester 3:</strong> Network Programming, Database Systems Design & Implementation, Introductory Statistics, Networking Essentials, Network Security Principles<br>
-        <strong>Semester 4:</strong> Systems Analysis and Design, Introduction to Programming, Fundamentals of Data Analytics, Computational Mathematics, Ethics, Legal and Professional Issues
+        Modules taken:<br />
+        <strong>Semester 3:</strong> Network Programming, Database Systems
+        Design & Implementation, Introductory Statistics, Networking Essentials,
+        Network Security Principles<br />
+        <strong>Semester 4:</strong> Systems Analysis and Design, Introduction
+        to Programming, Fundamentals of Data Analytics, Computational
+        Mathematics, Ethics, Legal and Professional Issues
       </p>
 
       <h4>July 2025 - May 2026</h4>
@@ -195,7 +201,7 @@
     </main>
 
     <footer class="last-updated">
-      <p>Last updated: 24/7/2025</p>
+      <p id="lastUpdated"></p>
     </footer>
 
     <script>
@@ -246,6 +252,11 @@
           }
         });
       });
+      // Set last updated date dynamically
+      document.getElementById("lastUpdated").textContent =
+        "Last updated: " +
+        new Date(document.lastModified).toLocaleDateString("en-GB");
     </script>
+    <script src="main.js"></script>
   </body>
 </html>
