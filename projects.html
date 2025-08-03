@@ -110,12 +110,98 @@
         Welcome to my projects page! Here you will find a selection of my
         programming and web development work:
       </p>
-      <p>This portfolio IS my only development work HAHAHAHAH</p>
+
+      <section class="project-showcase">
+        <div class="project-card">
+          <div class="project-header">
+            <h2>CHRONOS - Minimalist Watch Storefront</h2>
+            <span class="project-status">Completed</span>
+          </div>
+
+          <div class="project-content">
+            <div class="project-description">
+              <p class="project-tagline">"Timeless, Rough, Elegance"</p>
+              <p>
+                A clean, minimalist frontend showcase for premium timepieces.
+                This project demonstrates modern web design principles through a
+                dedicated watch storefront interface, focusing on visual
+                presentation and user experience.
+              </p>
+
+              <div class="project-features">
+                <h3>Key Features</h3>
+                <ul>
+                  <li>Elegant watch showcase with high-quality imagery</li>
+                  <li>Minimalist design with clean, uncluttered interface</li>
+                  <li>
+                    Responsive layout for seamless experience across devices
+                  </li>
+                  <li>Interactive elements with smooth hover effects</li>
+                  <li>
+                    Theme-aware logo switching based on system preferences
+                  </li>
+                  <li>Product gallery with professional watch presentation</li>
+                </ul>
+              </div>
+
+              <div class="project-tech">
+                <h3>Technologies Used</h3>
+                <div class="tech-tags">
+                  <span class="tech-tag">HTML5</span>
+                  <span class="tech-tag">CSS3</span>
+                  <span class="tech-tag">JavaScript (ES6+)</span>
+                  <span class="tech-tag">Responsive Design</span>
+                  <span class="tech-tag">CSS Grid & Flexbox</span>
+                  <span class="tech-tag">Google Fonts</span>
+                  <span class="tech-tag">Font Awesome</span>
+                </div>
+              </div>
+
+              <div class="project-links">
+                <a
+                  href="https://chronos-store.netlify.app/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="project-link"
+                >
+                  <span>🌐 Live Site</span>
+                </a>
+                <a
+                  href="https://github.com/zxdixc/Minimalist-Watch-Storefront"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="project-link"
+                >
+                  <span>📁 View on GitHub</span>
+                </a>
+              </div>
+            </div>
+
+            <div class="project-image">
+              <img
+                src="assets/CHRONOS Store Screenshot.webp"
+                alt="CHRONOS Watch Storefront Screenshot - Click to view fullscreen"
+                class="project-screenshot lightbox-trigger"
+                data-image="assets/CHRONOS Store Screenshot.webp"
+              />
+            </div>
+          </div>
+          <div class="project-date">Completed on 3/8/25</div>
+        </div>
+      </section>
     </main>
 
     <footer class="last-updated">
       <p id="lastUpdated"></p>
     </footer>
+
+    <!-- Lightbox Modal -->
+    <div id="lightbox" class="lightbox">
+      <div class="lightbox-content">
+        <img id="lightbox-image" src="" alt="Fullscreen view" />
+        <button class="lightbox-close" aria-label="Close lightbox">×</button>
+      </div>
+    </div>
 
     <script src="main.js"></script>
   </body>
