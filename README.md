@@ -89,4 +89,4 @@ Potential improvements for future versions:
 
 **Built with ❤️ by Muhamad Hanis Sahli Bin Iskandar**
 
-_Based on the [roadmap.sh portfolio project guide](https://roadmap.sh/projects/portfolio-website)_
+_Based on and expanded upon the [roadmap.sh portfolio project guide](https://roadmap.sh/projects/portfolio-website)_

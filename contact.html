@@ -23,7 +23,7 @@
     />
     <meta name="author" content="Muhamad Hanis Sahli Bin Iskandar" />
     <meta name="robots" content="index, follow" />
-    <meta name="language" content="English" />
+
     <meta name="revisit-after" content="7 days" />
 
     <!-- Canonical URL -->
@@ -70,6 +70,29 @@
     <link rel="icon" type="image/x-icon" href="assets/logo.ico" />
     <link rel="apple-touch-icon" href="assets/logo.png" />
 
+    <!-- Structured Data for SEO -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Muhamad Hanis Sahli Bin Iskandar",
+        "jobTitle": "Computing Student",
+        "alumniOf": {
+          "@type": "Organization",
+          "name": "Universiti Teknologi Brunei"
+        },
+        "knowsAbout": ["Web Development", "Network Security", "HTML", "CSS"],
+        "url": "https://zxdixc.github.io",
+        "sameAs": [
+          "https://github.com/zxdixc",
+          "https://www.linkedin.com/in/muhamad-hanis-sahli-bin-iskandar-063342357/",
+          "https://www.instagram.com/hanisahlii/"
+        ],
+        "image": "https://zxdixc.github.io/assets/my%20face.jpg",
+        "description": "Computing Student specializing in Network Security at UTB"
+      }
+    </script>
+
     <!-- Google Fonts - Outfit -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -79,31 +102,41 @@
     />
 
     <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
   </head>
   <body>
-    <div class="profile-header">
+    <figure class="profile-header">
       <img
         src="assets/my face.webp"
         alt="Muhamad Hanis Sahli Bin Iskandar - Computing Student"
         class="profile-pic"
       />
-      <span class="profile-name">Muhamad Hanis Sahli Bin Iskandar</span>
-    </div>
+      <figcaption class="profile-name">
+        Muhamad Hanis Sahli Bin Iskandar
+      </figcaption>
+    </figure>
     <nav>
-      <a href="index.html">Home</a>
-      <a href="projects.html">Projects</a>
-      <a href="contact.html">Contact</a>
-      <button
-        id="darkModeToggle"
-        class="dark-mode-toggle"
-        aria-label="Toggle dark mode"
-      >
-        <span class="toggle-icon">🌙</span>
-      </button>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li>
+          <button
+            id="darkModeToggle"
+            class="dark-mode-toggle"
+            aria-label="Toggle dark mode"
+          >
+            <i class="fas fa-moon"></i>
+          </button>
+        </li>
+      </ul>
     </nav>
 
-    <hr />
     <main>
+      <hr />
       <h1>Contact</h1>
       <p>
         You can reach me at my email at:

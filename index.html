@@ -16,15 +16,14 @@
     />
     <meta
       name="description"
-      content="Portfolio of Muhamad Hanis Sahli Bin Iskandar, a Computing Student specializing in Network Security at UTB. Skills include HTML, CSS, Python, Java, and C++. Based in Brunei."
+      content="Portfolio of Muhamad Hanis Sahli Bin Iskandar, a Computing Student specializing in Network Security at UTB. Skills include HTML and CSS. Based in Brunei."
     />
     <meta
       name="keywords"
-      content="portfolio, web developer, computing student, network security, HTML, CSS, Python, Java, C++, Brunei, UTB, Muhamad Hanis Sahli"
+      content="portfolio, web developer, computing student, network security, HTML, CSS, Brunei, UTB, Muhamad Hanis Sahli"
     />
     <meta name="author" content="Muhamad Hanis Sahli Bin Iskandar" />
     <meta name="robots" content="index, follow" />
-    <meta name="language" content="English" />
     <meta name="revisit-after" content="7 days" />
 
     <!-- Canonical URL -->
@@ -39,7 +38,7 @@
     />
     <meta
       property="og:description"
-      content="Portfolio of Muhamad Hanis Sahli Bin Iskandar, a Computing Student specializing in Network Security at UTB. Skills include HTML, CSS, Python, Java, and C++. Based in Brunei."
+      content="Portfolio of Muhamad Hanis Sahli Bin Iskandar, a Computing Student specializing in Network Security at UTB. Skills include HTML and CSS. Based in Brunei."
     />
     <meta
       property="og:image"
@@ -57,7 +56,7 @@
     />
     <meta
       property="twitter:description"
-      content="Portfolio of Muhamad Hanis Sahli Bin Iskandar, a Computing Student specializing in Network Security at UTB. Skills include HTML, CSS, Python, Java, and C++. Based in Brunei."
+      content="Portfolio of Muhamad Hanis Sahli Bin Iskandar, a Computing Student specializing in Network Security at UTB. Skills include HTML and CSS. Based in Brunei."
     />
     <meta
       property="twitter:image"
@@ -79,22 +78,14 @@
           "@type": "Organization",
           "name": "Universiti Teknologi Brunei"
         },
-        "knowsAbout": [
-          "Web Development",
-          "Network Security",
-          "Python",
-          "Java",
-          "HTML",
-          "CSS",
-          "C++"
-        ],
+        "knowsAbout": ["Web Development", "Network Security", "HTML", "CSS"],
         "url": "https://zxdixc.github.io",
         "sameAs": [
           "https://github.com/zxdixc",
           "https://www.linkedin.com/in/muhamad-hanis-sahli-bin-iskandar-063342357/",
           "https://www.instagram.com/hanisahlii/"
         ],
-        "image": "https://zxdixc.github.io/assets/my face.jpg",
+        "image": "https://zxdixc.github.io/assets/my%20face.jpg",
         "description": "Computing Student specializing in Network Security at UTB"
       }
     </script>
@@ -108,91 +99,120 @@
     />
 
     <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
   </head>
 
   <body>
-    <div class="profile-header">
+    <figure class="profile-header">
       <img
         src="assets/my face.webp"
-        alt="Muhamad Hanis Sahli Bin Iskandar - Computing Student"
+        alt="Muhamad Hanis Sahli Bin Iskandar"
         class="profile-pic"
       />
-      <span class="profile-name">Muhamad Hanis Sahli Bin Iskandar</span>
-    </div>
+      <figcaption class="profile-name">
+        Muhamad Hanis Sahli Bin Iskandar
+      </figcaption>
+    </figure>
 
     <nav>
-      <a href="index.html">Home</a>
-      <a href="projects.html">Projects</a>
-      <a href="contact.html">Contact</a>
-      <button
-        id="darkModeToggle"
-        class="dark-mode-toggle"
-        aria-label="Toggle dark mode"
-      >
-        <span class="toggle-icon">🌙</span>
-      </button>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li>
+          <button
+            id="darkModeToggle"
+            class="dark-mode-toggle"
+            aria-label="Toggle dark mode"
+          >
+            <i class="fas fa-moon"></i>
+          </button>
+        </li>
+      </ul>
     </nav>
 
-    <hr />
-
     <main>
+      <hr />
       <h1>Welcome!</h1>
-      <h2>Occupation</h2>
-      <p>Computing Student</p>
 
-      <h2>Skills</h2>
-      <p>(All beginner level) HTML, CSS, Python, Java</p>
+      <div class="info-row">
+        <div id="occupation" class="profile-section">
+          <h2>Occupation</h2>
+          <p>
+            Currently: Computing Student
+            <br />
+            Dream Job: Front End Web Developer
+          </p>
+        </div>
 
-      <h2>Education Background</h2>
+        <div id="skills" class="profile-section">
+          <h2>Skills</h2>
+          <p>
+            Programming languages: HTML and CSS
+            <br />
+            Design tools: GIMP (Photo editing), InkScape (Vector graphics)
+          </p>
+        </div>
+        <div id="experience" class="profile-section">
+          <h2>Experience</h2>
+          <p>No part time job experience or internship (yet :D)</p>
+        </div>
+      </div>
 
-      <h3>Pusat Tingkatan Enam Belait, Kuala Belait</h3>
-      <p class="italic">This is where my love of programming started.</p>
-      <h4>January 2021 - November 2022</h4>
-      <p>
-        Completed A Levels with a focus on Computer Science, Mathematics, and
-        Physics.
-      </p>
+      <div id="education" class="profile-section">
+        <h2>Education Background</h2>
+        <div class="education-box">
+          <h3>Pusat Tingkatan Enam Belait, Kuala Belait</h3>
+          <p>This is where my love of programming started.</p>
+          <h4>January 2021 - November 2022</h4>
+          <p>
+            Completed A Levels with a focus on
+            <span id="subjects"
+              >Computer Science, Mathematics,and Physics.</span
+            >
+            <br />
+            Learned the fundamentals of programming and my first programming
+            language here with Python.
+          </p>
+        </div>
 
-      <h3>Micronet, Bandar Seri Begawan</h3>
-      <p class="italic">Entered through the UTB-MIC program to get a degree.</p>
-      <h4>August 2023 - May 2024</h4>
-      <p>
-        Here is where I learned the basics of programming and essentials of
-        computer science in general.
-      </p>
-      <p>
-        Modules taken:<br />
-        <strong>Semester 1:</strong> Melayu Islam Beraja, Effective
-        Communication, Computer Systems and Architecture, Information Security
-        Fundamentals<br />
-        <strong>Semester 2:</strong> Systems Analysis and Design, Introduction
-        to Programming, Fundamentals of Data Analytics, Computational
-        Mathematics, Ethics, Legal and Professional Issues
-      </p>
+        <div class="education-box">
+          <h3>Micronet, Bandar Seri Begawan</h3>
+          <p>
+            Degree:
+            <span id="subjects"
+              >BSc Hons in Computing (Major in Network Security)</span
+            >
+          </p>
+          <p>
+            Due to acheiving low results in my A Levels, I continued my
+            education through the UTB-MIC satellite program to get a degree.
+          </p>
+          <h4>August 2023 - May 2024</h4>
+          <p>
+            I learned another progamming language with Java and discovered the
+            complexities of computers, networks and the internet. This period is
+            where I found my potential to be a front end web developer.
+          </p>
+        </div>
 
-      <h3>Universiti Teknologi Brunei, Bandar Seri Begawan</h3>
-      <p>Degree: BSc Hons in Computing (Major in Network Security)</p>
-      <p class="italic">
-        Continuing my journey to becoming a "skilled" programmer
-      </p>
+        <div class="education-box">
+          <h3>Universiti Teknologi Brunei, Bandar Seri Begawan</h3>
+          <p>Continuing my journey to becoming a "skilled" programmer</p>
 
-      <h4>July 2024 - May 2025</h4>
-      <p>After 1 year at Micronet, I continued my studies at UTB.</p>
-      <p>
-        Modules taken:<br />
-        <strong>Semester 3:</strong> Network Programming, Database Systems
-        Design & Implementation, Introductory Statistics, Networking Essentials,
-        Network Security Principles<br />
-        <strong>Semester 4:</strong> Systems Analysis and Design, Introduction
-        to Programming, Fundamentals of Data Analytics, Computational
-        Mathematics, Ethics, Legal and Professional Issues
-      </p>
+          <h4>July 2024 - May 2025</h4>
+          <p>
+            After 1 year at Micronet, I continued my studies at UTB to further
+            my understanding of how cyber security works.
+          </p>
 
-      <h4>July 2025 - May 2026</h4>
-      <p>Currently undergoing Year 3 as of 21/7/2025.</p>
-
-      <h2>Experience</h2>
-      <p>No part time job experience or internship (yet :D)</p>
+          <h4>July 2025 - Present</h4>
+          <p>Currently undergoing Year 3 starting from 21/7/2025.</p>
+        </div>
+      </div>
     </main>
 
     <footer class="last-updated">

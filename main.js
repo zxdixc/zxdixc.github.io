@@ -1,10 +1,11 @@
-// Fade-in on page load
+//Fade-in on page load
 window.addEventListener("DOMContentLoaded", function () {
   document.body.classList.add("fade-in");
 });
 
-// Fade-out on navigation for internal links
+// Consolidated DOMContentLoaded event listener
 window.addEventListener("DOMContentLoaded", function () {
+  // Navigation fade effect
   document.querySelectorAll("a[href]").forEach((link) => {
     // Only handle internal links
     if (link.hostname === window.location.hostname) {
@@ -26,10 +27,8 @@ window.addEventListener("DOMContentLoaded", function () {
       });
     }
   });
-});
 
-// Dark mode toggle logic
-window.addEventListener("DOMContentLoaded", function () {
+  // Dark mode toggle logic
   const toggleButton = document.querySelector(".dark-mode-toggle");
   const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
   const storedTheme = localStorage.getItem("theme");
@@ -37,34 +36,41 @@ window.addEventListener("DOMContentLoaded", function () {
   // Set initial theme
   if (storedTheme === "dark" || (!storedTheme && prefersDark)) {
     document.body.classList.add("dark-mode");
+    if (toggleButton) {
+      toggleButton.innerHTML = '<i class="fas fa-sun"></i>';
+    }
   } else {
     document.body.classList.remove("dark-mode");
+    if (toggleButton) {
+      toggleButton.innerHTML = '<i class="fas fa-moon"></i>';
+    }
   }
 
   // Toggle dark mode on button click
   if (toggleButton) {
     toggleButton.addEventListener("click", function () {
       document.body.classList.toggle("dark-mode");
+
+      // Update icon based on current mode
       if (document.body.classList.contains("dark-mode")) {
         localStorage.setItem("theme", "dark");
+        this.innerHTML = '<i class="fas fa-sun"></i>';
       } else {
         localStorage.setItem("theme", "light");
+        this.innerHTML = '<i class="fas fa-moon"></i>';
       }
     });
   }
-});
 
-window.addEventListener("DOMContentLoaded", function () {
+  // Last updated logic
   const lastUpdated = document.getElementById("lastUpdated");
   if (lastUpdated) {
     lastUpdated.textContent =
       "Last updated: " +
       new Date(document.lastModified).toLocaleDateString("en-GB");
   }
-});
 
-// Lightbox functionality
-window.addEventListener("DOMContentLoaded", function () {
+  // Lightbox functionality
   const lightbox = document.getElementById("lightbox");
   const lightboxImage = document.getElementById("lightbox-image");
   const lightboxClose = document.querySelector(".lightbox-close");

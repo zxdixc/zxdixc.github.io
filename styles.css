@@ -19,7 +19,7 @@ html {
 
   /* Navigation colors */
   --nav-border-light: var(--color-primary);
-  --nav-border-dark: var(--color-accent);
+  --nav-border-dark: var(--color-primary);
 }
 
 /* Base font styles */
@@ -69,14 +69,55 @@ html {
   transition: color 0.3s ease;
 }
 
+.profile-section {
+  margin-bottom: 2em;
+  border: 2px solid var(--color-primary);
+  border-radius: 1em;
+  padding: 2em;
+  transition: all 0.3s ease;
+}
+
+.profile-section:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(5, 146, 18, 0.15);
+  border-color: rgba(5, 146, 18, 0.4);
+}
+
+.info-row {
+  display: flex;
+  gap: 2rem;
+  margin: 0 auto;
+  max-width: 1500px;
+}
+
+.info-row .profile-section {
+  flex: 1 1 auto;
+  box-sizing: border-box;
+}
+
+.education-box {
+  border: 2px solid var(--color-primary);
+  border-radius: 1em;
+  padding: 1em;
+  margin-bottom: 0.5em;
+  transition: all 0.3s ease;
+}
+
+.education-box:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(5, 146, 18, 0.15);
+  border-color: rgba(5, 146, 18, 0.4);
+}
+
+.education-row .education-box {
+  flex: 1 1 auto;
+  box-sizing: border-box;
+}
+
 .site-logo {
   width: 200px;
   height: auto;
   margin-bottom: 0.5em;
-}
-
-.italic {
-  font-style: italic;
 }
 
 main {
@@ -149,6 +190,15 @@ nav a:focus {
   color: #fff;
 }
 
+nav ul {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
 /* Dark mode toggle button */
 .dark-mode-toggle {
   background: none;
@@ -166,53 +216,6 @@ nav a:focus {
 .dark-mode-toggle:focus {
   background: var(--color-primary);
   color: #fff;
-}
-
-.toggle-icon {
-  transition: transform 0.3s ease;
-}
-
-/* Dark mode styles */
-body.dark-mode {
-  background-color: var(--bg-dark);
-  color: var(--text-dark);
-}
-
-body.dark-mode .profile-name {
-  color: var(--text-dark);
-}
-
-body.dark-mode nav {
-  border-color: var(--nav-border-dark);
-}
-
-body.dark-mode nav a {
-  color: var(--color-accent);
-}
-
-body.dark-mode nav a:hover,
-body.dark-mode nav a:focus {
-  background: var(--color-accent);
-  color: #222;
-}
-
-body.dark-mode .dark-mode-toggle {
-  color: var(--color-accent);
-}
-
-body.dark-mode .dark-mode-toggle:hover,
-body.dark-mode .dark-mode-toggle:focus {
-  background: var(--color-accent);
-  color: #222;
-}
-
-body.dark-mode .toggle-icon {
-  transform: rotate(180deg);
-}
-
-body.dark-mode p,
-body.dark-mode li {
-  color: var(--text-dark);
 }
 
 h1,
@@ -233,7 +236,7 @@ h2 {
 }
 
 h3 {
-  color: var(--color-accent);
+  color: var(--color-secondary);
 }
 
 h4 {
@@ -241,6 +244,7 @@ h4 {
   font-optical-sizing: auto;
   font-weight: bold;
   font-style: italic;
+  color: var(--color-accent);
 }
 
 p,
@@ -250,6 +254,10 @@ li {
   font-weight: 400;
   font-style: normal;
   color: var(--text-light);
+}
+
+#subjects {
+  color: var(--color-accent);
 }
 
 .last-updated {
@@ -263,11 +271,6 @@ li {
   font-style: normal;
   color: #666;
   font-size: 0.9em;
-}
-
-body.dark-mode .last-updated {
-  border-top-color: #444;
-  color: #aaa;
 }
 
 /* Page transition fade effect */
@@ -529,7 +532,171 @@ body.dark-mode .last-updated {
   transform: scale(1.1);
 }
 
-/* Dark mode adjustments for lightbox */
+/* ===== DARK MODE STYLES ===== */
+@media (prefers-color-scheme: dark) {
+  /* Automatic dark mode based on system preference */
+  body {
+    background-color: var(--bg-dark);
+    color: var(--text-dark);
+  }
+
+  .profile-name {
+    color: var(--text-dark);
+  }
+
+  nav {
+    border-color: var(--nav-border-dark);
+  }
+
+  nav a {
+    color: var(--color-primary);
+  }
+
+  nav a:hover,
+  nav a:focus {
+    background: var(--color-primary);
+    color: #222;
+  }
+
+  .dark-mode-toggle {
+    color: var(--color-primary);
+  }
+
+  .dark-mode-toggle:hover,
+  .dark-mode-toggle:focus {
+    background: var(--color-primary);
+    color: #222;
+  }
+
+  p,
+  li {
+    color: var(--text-dark);
+  }
+
+  .profile-section:hover {
+    border-color: rgba(155, 236, 0, 0.5);
+    box-shadow: 0 8px 25px rgba(155, 236, 0, 0.2);
+  }
+
+  .education-box:hover {
+    border-color: rgba(155, 236, 0, 0.5);
+    box-shadow: 0 8px 25px rgba(155, 236, 0, 0.2);
+  }
+
+  .last-updated {
+    border-top-color: #444;
+    color: #aaa;
+  }
+
+  /* Lightbox adjustments */
+  .lightbox-close {
+    background: rgba(255, 255, 255, 0.1);
+  }
+
+  .lightbox-close:hover {
+    background: rgba(255, 255, 255, 0.2);
+  }
+
+  /* Project showcase */
+  .project-card {
+    background: rgba(26, 26, 26, 0.8);
+    border-color: rgba(155, 236, 0, 0.3);
+  }
+
+  .project-card:hover {
+    border-color: rgba(155, 236, 0, 0.5);
+    box-shadow: 0 8px 25px rgba(155, 236, 0, 0.2);
+  }
+
+  .project-header h2 {
+    color: var(--color-accent);
+  }
+
+  .project-tagline {
+    color: var(--color-secondary);
+  }
+
+  .project-features h3,
+  .project-tech h3 {
+    color: var(--color-accent);
+  }
+
+  .tech-tag {
+    background: rgba(155, 236, 0, 0.1);
+    color: var(--color-accent);
+    border-color: rgba(155, 236, 0, 0.3);
+  }
+
+  .tech-tag:hover {
+    background: rgba(155, 236, 0, 0.2);
+  }
+
+  .project-link {
+    background: var(--color-accent);
+    color: #000;
+    border-color: var(--color-accent);
+  }
+
+  .project-link:hover {
+    background: transparent;
+    color: var(--color-accent);
+  }
+}
+
+/* Manual dark mode toggle (overrides system preference) */
+body.dark-mode {
+  background-color: var(--bg-dark);
+  color: var(--text-dark);
+}
+
+body.dark-mode .profile-name {
+  color: var(--text-dark);
+}
+
+body.dark-mode nav {
+  border-color: var(--nav-border-dark);
+}
+
+body.dark-mode nav a {
+  color: var(--color-primary);
+}
+
+body.dark-mode nav a:hover,
+body.dark-mode nav a:focus {
+  background: var(--color-primary);
+  color: #222;
+}
+
+body.dark-mode .dark-mode-toggle {
+  color: var(--color-primary);
+}
+
+body.dark-mode .dark-mode-toggle:hover,
+body.dark-mode .dark-mode-toggle:focus {
+  background: var(--color-primary);
+  color: #222;
+}
+
+body.dark-mode p,
+body.dark-mode li {
+  color: var(--text-dark);
+}
+
+body.dark-mode .profile-section:hover {
+  border-color: rgba(155, 236, 0, 0.5);
+  box-shadow: 0 8px 25px rgba(155, 236, 0, 0.2);
+}
+
+body.dark-mode .education-box:hover {
+  border-color: rgba(155, 236, 0, 0.5);
+  box-shadow: 0 8px 25px rgba(155, 236, 0, 0.2);
+}
+
+body.dark-mode .last-updated {
+  border-top-color: #444;
+  color: #aaa;
+}
+
 body.dark-mode .lightbox-close {
   background: rgba(255, 255, 255, 0.1);
 }
@@ -538,7 +705,6 @@ body.dark-mode .lightbox-close:hover {
   background: rgba(255, 255, 255, 0.2);
 }
 
-/* Dark mode styles for project showcase */
 body.dark-mode .project-card {
   background: rgba(26, 26, 26, 0.8);
   border-color: rgba(155, 236, 0, 0.3);
@@ -587,28 +753,14 @@ body.dark-mode .project-link:hover {
   .profile-header {
     position: relative;
     margin-bottom: 1em;
-    left: 50%;
-    transform: translateX(-50%);
+    width: 80%;
     justify-content: center;
     text-align: center;
   }
 
   .profile-pic {
-    width: 36px;
-    height: 36px;
-  }
-
-  hr {
-    margin-top: 2em;
-    margin-bottom: 1em;
-  }
-
-  main {
-    margin-top: 1em;
-  }
-
-  body {
-    padding: 10px;
+    width: 65px;
+    height: 65px;
   }
 
   nav {
@@ -643,6 +795,23 @@ body.dark-mode .project-link:hover {
     font-size: 1em;
   }
 
+  hr {
+    margin-top: 2em;
+    margin-bottom: 1em;
+  }
+
+  main {
+    margin-top: 1em;
+  }
+
+  .info-row {
+    flex-direction: column;
+  }
+
+  body {
+    padding: 7px;
+  }
+
   h1 {
     font-size: 1.5em;
   }
@@ -666,6 +835,11 @@ body.dark-mode .project-link:hover {
   }
 
   /* Mobile responsive styles for project showcase */
+  .project-status {
+    font-size: 0.8em;
+    align-self: center;
+  }
+
   .project-content {
     grid-template-columns: 1fr;
     gap: 1.5em;
